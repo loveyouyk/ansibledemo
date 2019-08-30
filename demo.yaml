@@ -1,0 +1,4 @@
+- hosts: All
+  tasks: 
+    - name: show debug message
+      debug: "System {{ inventory_hostname }} has uuid {{ ansible_product_uuid }}"
